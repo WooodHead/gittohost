@@ -1,0 +1,25 @@
+{
+  "name": "gittohost",
+  "version": "1.0.0",
+  "description": "A service for publishing your github code direcly to a ftp host in an automatic way",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/webjocke/gittohost.git"
+  },
+  "author": "Joakim Johansson, github@webjocke",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/webjocke/gittohost/issues"
+  },
+  "homepage": "https://github.com/webjocke/gittohost#readme",
+  "dependencies": {
+    "config": "^1.30.0",
+    "ftps": "^1.1.0",
+    "jsftp": "^2.1.3"
+  }
+}
