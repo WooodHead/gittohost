@@ -19,7 +19,9 @@
   "homepage": "https://github.com/webjocke/gittohost#readme",
   "dependencies": {
     "config": "^1.30.0",
+    "express": "^4.16.3",
     "ftps": "^1.1.0",
-    "jsftp": "^2.1.3"
+    "jsftp": "^2.1.3",
+    "mongodb": "^3.0.10"
   }
 }

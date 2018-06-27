@@ -1,14 +1,42 @@
+/* Imports */
+var config = require('config')
+var express = require('express');
+var app = express();
+var path = require('path');
+
 console.log("=============================")
 console.log("== Git-To-Host has started ==")
 console.log("=============================")
 
-var config = require('config')
-
+/* Checking if the config module is working */
 if (config.has('ftp.host')) {
     var detail = config.get('ftp.host')
     console.log("FTP host is:", detail)
     console.log()
 }
+
+/* Database Setup */
+var MongoClient = require('mongodb').MongoClient;
+var url = "mongodb://" + config.get('mongodb.host') + ":" + config.get('mongodb.port') + "/whatsup";
+MongoClient.connect(url, function(err, db) {
+    if (err) throw err;
+    var dbo = db.db("mydb");
+    dbo.createCollection("customers", function(err, res) {
+        if (err) throw err;
+        console.log("Collection created!");
+        db.close();
+    });
+});
+
+// viewed at http://localhost:8080
+app.get('/', function(req, res) {
+    res.sendFile(path.join(__dirname + '/html/index.html'));
+});
+app.get('/callback', function(req, res) {
+    res.sendFile(path.join(__dirname + '/html/callback.html'));
+    console.log("Code: ", req.query.code)
+});
+app.listen(8080);
 
 
 
