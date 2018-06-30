@@ -1,4 +1,3 @@
 config/default.json
 node_modules/
 testfiles/
-package-lock.json

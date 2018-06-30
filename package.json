@@ -4,8 +4,8 @@
   "description": "A service for publishing your github code direcly to a ftp host in an automatic way",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "dev": "webpack -d --watch",
+    "build" : "webpack -p"
   },
   "repository": {
     "type": "git",
@@ -18,10 +18,25 @@
   },
   "homepage": "https://github.com/webjocke/gittohost#readme",
   "dependencies": {
+    "@material-ui/core": "^1.3.0",
+    "@material-ui/icons": "^1.1.0",
+    "babel-cli": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-react-app": "^3.1.2",
     "config": "^1.30.0",
     "express": "^4.16.3",
     "ftps": "^1.1.0",
+    "install": "^0.12.1",
     "jsftp": "^2.1.3",
-    "mongodb": "^3.0.10"
+    "mongodb": "^3.0.10",
+    "nodemon": "^1.17.5",
+    "npm": "^6.1.0",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "webpack": "^4.13.0",
+    "webpack-cli": "^3.0.8",
+    "webpack-command": "^0.3.1"
   }
 }

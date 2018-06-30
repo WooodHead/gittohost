@@ -40,7 +40,7 @@ Field Name | Example Value | Decription
 id | 456 | A id of the login to make them stand out from each other
 user_id | 23 | The id of the user who wants to login
 started | 2017-06-27T03:10 | The date when this login started being active
-ended | 2017-06-27T03:10 | The date when this login ended being active
+ended | 2017-06-27T03:10 | The date when this login ended being active or should end being active
 token | fb6534gudxghv7584hfgd6754g387hrfd67854eh | The unic token that the user has in order to be logged in
 
 ## Logs Collection

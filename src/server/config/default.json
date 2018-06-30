@@ -1,0 +1,17 @@
+{
+    "ftp": {
+        "host":"sizableelectronics.com",
+        "username":"sizableele",
+        "password":"AcE1351234567",
+        "port":21,
+        "path": "/domains/sizableelectronics.com/private_html"
+    },
+    "github_oauth_app": {
+        "client_id":"499a21d71009b21b107e",
+        "client_secret":"ba9be357eae0b778130882418c585cf8ee7fdf8f"
+    },
+    "mongodb": {
+        "host":"localhost",
+        "port":27017
+    }
+}
